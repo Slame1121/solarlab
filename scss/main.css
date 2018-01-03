@@ -2617,7 +2617,8 @@ body {
   position: absolute; }
   #header .headblock {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     #header .headblock-item_nav-contact {
       margin-bottom: 10px;
       color: #fff;
