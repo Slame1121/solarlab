@@ -1,0 +1,51 @@
+#header{
+  background-color: rgba(4, 15, 22, .7);
+  width:100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
+  padding:15px 0;
+  position:absolute;
+  .headblock{
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      &_nav{
+        &-contact{
+          margin-bottom: 10px;
+          color: #fff;
+          text-align: right;
+          &_telephone{
+            font-family: 'Open Sans', sans-serif;
+          }
+          a{
+            margin-left:15px;
+            color:#fff;
+          }
+        }
+
+        &-menu{
+          &__list{
+            display: flex;
+            list-style: none;
+            border-top: 1px solid #848283;
+            padding-top:10px;
+            li{
+              a{
+                padding:5px 10px;
+                color:#fff;
+                text-decoration: none;
+                display: block;
+                text-transform: uppercase;
+                &:hover{
+                 border-bottom:2px solid  #fdcd56;
+                 padding:5px 10px 3px 10px;
+                 color:#fdcd56;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
