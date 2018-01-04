@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Get an object</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 	<link rel="stylesheet" href="scss/main.css" />
 </head>
 <body>
@@ -19,25 +19,32 @@
 			<div class="headblock-item">
 				<div class="headblock-item_logo">
 					<a href="#" class="headblock-item_logo-link">
-						<img src="images/logo.png" />
+						<img class="headblock-item_logo-link__img-big" src="images/logo.png" />
+						<img class="headblock-item_logo-link__img-small" src="images/logo-small.png" />
 					</a>
 				</div>
 			</div>
 			<div class="headblock-item">
 				<div class="headblock-item_nav">
+					<div class="headblock-item_nav-menutoggler">
+						<i class="fa fa-align-justify fa-2x"></i>
+					</div>
 					<div class="headblock-item_nav-contact">
 						<a class="headblock-item_nav-contact_telephone">+38 (095) 315 98 93</a>
-						<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-						<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+						<div class="headblock-item_nav-contact__social">
+							<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+							<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+						</div>
 					</div>
+
 					<div class="headblock-item_nav-menu">
-					<ul class="headblock-item_nav-menu__list">
-						<li><a  href="#">Наши</a></li>
-						<li><a href="#">Обьекты</a></li>
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+						<ul class="headblock-item_nav-menu__list">
+							<li><a  href="#">Наши</a></li>
+							<li><a href="#">Обьекты</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -45,7 +52,59 @@
 	</div>
 </section>
 <section id="banner">
-
+	<div class="container">
+		<div class="banner-container">
+			<div class="banner-container__slogan">
+				<p>СОЛНЕЧНЫЕ ЭЛЕКТРОСТАНЦИИ</p>
+				<span>"ПОД КЛЮЧ" ОТ ПРОФЕССИОНАЛОВ</span>
+				<div class="banner-container__slogan-delimetr"></div>
+			</div>
+			<div class="banner-container__features">
+				<div class="banner-container__features-item">
+					<p><i class="check_icon"></i> СРОК СЛУЖБЫ ОБОРУДОВАНИЯ <b>25 ЛЕТ</b></p>
+				</div>
+				<div class="banner-container__features-item">
+					<p><i class="check_icon"></i> ОКУПАЕМОСТЬ <b>ОТ 3 ЛЕТ</b></p>
+				</div>
+				<div class="banner-container__features-item">
+					<p><i class="check_icon"></i> ГАРАНТИЯ ДО  <b>10 ЛЕТ</b></p>
+				</div>
+			</div>
+			<div class="banner-container__button">
+				<button class="draw" type="button">Бесплатная консультация</button>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="features">
+	<div class="container">
+		<div class="features-container">
+			<div class="features-container__item">
+				<div class="features-container__item-thumb">
+					<img src="images/feature_1.png" />
+				</div>
+				<div class="features-container__item-description">
+					<p>солнечные електростанции</p>
+				</div>
+			</div>
+			<div class="features-container__item">
+				<div class="features-container__item-thumb">
+					<img src="images/features_2.png" />
+				</div>
+				<div class="features-container__item-description">
+					<p>ПОДКЛЮЧЕНИЕ ЗЕЛЕНОГО ТАРИФА</p>
+				</div>
+			</div>
+			<div class="features-container__item">
+				<div class="features-container__item-thumb">
+					<img src="images/features_3.png" />
+				</div>
+				<div class="features-container__item-description">
+					<p>КАЛЬКУЛЯТОР СТОИМОСТИ</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 </body>
 </html>

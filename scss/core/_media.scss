@@ -4,5 +4,106 @@
     .container {
       width: 960px;
     }
+    #header{
+      .headblock-item{
+        &_nav-menu__list{
+          a{
+            font-size:13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  body {
+    .container {
+      width: 772px;
+    }
+    #header{
+      .headblock-item{
+        &_logo-link{
+          &__img{
+            &-small{
+              display: block;
+            }
+            &-big{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    #banner .banner-container__features{
+      flex-direction: column;
+
+      &-item{
+        margin-bottom:20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  body {
+    .container {
+      width: 100%;
+    }
+
+    #header {
+      .headblock-item {
+        &_nav{
+          &-contact{
+            float:right;
+            &__social{
+              text-align: center;
+              display: block;
+            }
+          }
+          &-menutoggler{
+            display: block;
+            float:right;
+            margin-left:30px;
+          }
+          &-menu__list {
+            display: none;
+          }
+        }
+      }
+    }
+    #banner .banner-container{
+      &__button{
+        padding:50px 0;
+      }
+      &__features{
+        &-item{
+          p{
+            &::before{
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &__slogan {
+        span{
+          font-size: 30px;
+        }
+        p{
+          font-size:30px;
+        }
+      }
+    }
+
+    #features .features-container{
+      flex-direction: column;
+
+      &__item{
+        width:100%;
+        border-right:0;
+        margin-bottom:25px;
+      }
+    }
+
   }
 }
