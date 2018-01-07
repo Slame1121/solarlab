@@ -1,0 +1,16 @@
+.contact_container{
+  display: flex;
+  padding: 70px 0 40px 0;
+  &-item{
+    text-align: center;
+    font-size: 18px;
+    &__title{
+      font-weight: 600;
+      text-transform: uppercase;
+      margin:10px 0 20px 0;
+    }
+    &__description{
+      font-family: $font-opens_sans;
+    }
+  }
+}

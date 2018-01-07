@@ -38,3 +38,20 @@
 #our_partners{
   background: #f8f8f8;
 }
+#contact{
+  position: relative;
+  &:after{
+    background-size: cover;
+    background: url('../images/contact-background.jpg') center center;
+    content: "";
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+
+}

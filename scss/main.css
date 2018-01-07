@@ -3237,6 +3237,19 @@ body {
       font-size: 42px;
       font-weight: 600; }
 
+.contact_container {
+  display: flex;
+  padding: 70px 0 40px 0; }
+  .contact_container-item {
+    text-align: center;
+    font-size: 18px; }
+    .contact_container-item__title {
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 10px 0 20px 0; }
+    .contact_container-item__description {
+      font-family: "Open Sans, sans-serif"; }
+
 @media (max-width: 1200px) {
   body {
     font-size: 16px; }
@@ -3318,5 +3331,19 @@ body {
 
 #our_partners {
   background: #f8f8f8; }
+
+#contact {
+  position: relative; }
+  #contact:after {
+    background-size: cover;
+    background: url("../images/contact-background.jpg") center center;
+    content: "";
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
 
 /*# sourceMappingURL=main.css.map */
