@@ -1,0 +1,126 @@
+.slider_container{
+  &-bbutton{
+    text-align: center;
+    margin:40px 0;
+    .spot {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    /*
+        This is the outer svg wrapper that the SVG itself will
+        fill. Multiple svg-wrapper classes can be put side by side.
+    */
+
+    .svg-wrapper {
+      position: relative;
+      width: 280px;
+      /*make sure to use same height/width as in the html*/
+      height: 40px;
+      display: inline-block;
+      border-radius: 3px;
+    }
+    /*
+      This is where we define the fill, color, thickness,
+      and stroke pattern of the SVG when there is no hover.
+      The dasharray and offset together define the line position
+      under the words. Here's also where the transition speed is set.
+    */
+
+    #shape {
+      stroke-width: 8px;
+      fill: transparent;
+      stroke: #fdcd56;
+      stroke-dasharray: 50 440;
+      stroke-dashoffset: 56;
+      transition: 1s all ease;
+    }
+    /*
+        Pushing the text up into the SVG. Without this the
+        text would be below the div's.
+    */
+
+    #text {
+      margin-top: -35px;
+      text-align: center;
+    }
+
+    #text a {
+      color: rgba(0, 0, 0, 1);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.1em;
+      font-weight: 800;
+    }
+    /*
+        Changing the shape on hover. I change the color of the stroke,
+    make it thinner, then set it to again wrap around the entire parent element.
+    */
+
+    .svg-wrapper:hover #shape {
+      stroke-dasharray: 50 0;
+      stroke-width: 6px;
+      stroke-dashoffset: 0;
+      stroke: #06D6A0;
+    }
+  }
+  &-title{
+    text-align: center;
+    margin-bottom:25px;
+
+    span{
+      border:7px solid #dde0e2;
+      padding:40px 35px;
+      display: inline-block;
+      color:#333333;
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+  }
+  &-content{
+    .left, .right{
+      cursor:pointer;
+    }
+    &__item{
+      &-description{
+        position: absolute;
+        bottom: 0;
+        padding: 35px 35px;
+
+        &__separator{
+          width:100%;
+          height:1px;
+          background: rgba(255,2555,255,.5);
+          margin-bottom:5px;
+          display: inline-block;
+        }
+
+        p, span{
+          color:#fff;
+          text-transform: uppercase;
+        }
+
+        p{
+          font-size: 32px;
+        }
+
+        span{
+          font-size:16px;
+        }
+        button{
+          background: rgba(255,2555,255,.251);
+          padding: 5px 10px;
+          border:0;
+          color:#fff;
+          font-size:18px;
+          margin:15px 0;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+
+}

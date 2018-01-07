@@ -1,0 +1,9 @@
+.description_container-item p {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase; }
+  .description_container-item p .green {
+    color: #37e880; }
+
+/*# sourceMappingURL=description.css.map */
