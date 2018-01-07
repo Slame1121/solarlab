@@ -1,0 +1,26 @@
+.attributes_container{
+  display: flex;
+  margin-top: -30px;
+  margin-bottom:80px;
+  &-item{
+    text-align: center;
+
+    &__thumb{
+      img{
+        border-bottom:1px solid #a0a0a0;
+        padding-bottom:20px;
+      }
+    }
+    &__description{
+      p{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      span{
+        font-size: 16px;
+        opacity: .8;
+      }
+    }
+  }
+}

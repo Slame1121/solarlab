@@ -3015,8 +3015,10 @@ body {
       text-transform: uppercase; }
       .description_container-item p .green {
         color: #37e880; }
-    .description_container-item span {
-      font-size: 36px;
+    .description_container-item > span {
+      font-size: 30px;
+      display: inline-block;
+      width: 100%;
       color: #fff;
       text-transform: uppercase; }
     .description_container-item__button-link {
@@ -3067,6 +3069,37 @@ body {
           border-bottom-color: #fdcd56;
           border-left-color: #fdcd56;
           transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+
+.big_text_container__title {
+  text-align: center;
+  border-bottom: 1px solid #8c8f93;
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
+  .big_text_container__title p {
+    font-size: 42px;
+    text-transform: uppercase; }
+.big_text_container__content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: rgba(88, 88, 88, 0.72);
+  text-transform: uppercase; }
+
+.attributes_container {
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 80px; }
+  .attributes_container-item {
+    text-align: center; }
+    .attributes_container-item__thumb img {
+      border-bottom: 1px solid #a0a0a0;
+      padding-bottom: 20px; }
+    .attributes_container-item__description p {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 18px; }
+    .attributes_container-item__description span {
+      font-size: 16px;
+      opacity: .8; }
 
 @media (max-width: 1200px) {
   body {
@@ -3133,7 +3166,15 @@ body {
 #slider_top {
   padding-top: 50px; }
 
-#description_1 {
+#description_1,
+#description_2 {
   background: url("../images/description_1_background.jpg"); }
+
+#big_text {
+  background-color: #f4f6f8;
+  padding: 80px 15px; }
+
+#slider_bottom {
+  margin-top: 60px; }
 
 /*# sourceMappingURL=main.css.map */
