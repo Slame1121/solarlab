@@ -1,0 +1,38 @@
+.footer_container{
+  padding:60px;
+  &__links{
+    display: flex;
+
+    &-logo{
+      flex:auto;
+    }
+    &-social{
+      display: flex;
+      align-items: center;
+      text-align: right;
+      p{
+        color:#fff;
+        text-transform: uppercase;
+      }
+      a{
+        margin-left:15px;
+      }
+    }
+  }
+  &__menu{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(255,255,255,.6);
+    margin-bottom:15px;
+    a{
+      font-weight: 600;
+      color:#fff;
+      padding:10px;
+      text-decoration: none;
+      &:hover{
+        border-bottom:2px solid  #fdcd56;
+        color:#fdcd56;
+      }
+    }
+  }
+}
