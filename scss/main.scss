@@ -1,5 +1,7 @@
 @import "components/font-awesome/fontawesome";
 @import "components/owlcarousel/owl.carousel";
+@import "components/owlcarousel/owl.theme.default";
+
 @import "core/vars";
 @import "core/general";
 
@@ -10,6 +12,8 @@
 @import "blocks/description";
 @import "blocks/big_text";
 @import "blocks/attributes";
+@import "blocks/reviews";
+@import "blocks/partners";
 
 @import "core/media";
 

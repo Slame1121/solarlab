@@ -1,0 +1,100 @@
+.reviews_container{
+  padding-bottom:70px;
+
+  &-button_add{
+    position: relative;
+    button{
+      outline: none;
+      cursor: pointer;
+      z-index: 3;
+      color: #70bb2a;
+      position: absolute;
+      background: #fff;
+      border-radius: 80%;
+      border: 0 none;
+      right: 0;
+      top: -40px;
+    }
+  }
+  &-slider{
+    margin-top:70px;
+
+    &__item{
+      text-align: center;
+      color:#fff;
+
+      &-name{
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      &-comment{
+        padding:0 85px;
+        text-align: justify;
+        font-size: 18px;
+        margin-top:25px;
+      }
+
+    }
+    .owl{
+      &-dots{
+        text-align: left;
+        padding-top:60px;
+        .owl-dot{
+          span{
+            background: #fff;
+          }
+          &:hover,
+          &.active{
+            span{
+              background-color:#fdcd56;
+            }
+          }
+        }
+      }
+      &-nav{
+        position: absolute;
+        top:0;
+        width: 100%;
+        .owl{
+          &-prev, &-next{
+            position: absolute;
+          }
+          &-prev{
+            left:0;
+            top:45px;
+          }
+          &-next{
+            right:0;
+            top:45px;
+          }
+        }
+      }
+    }
+  }
+  &-title{
+    text-align: center;
+    padding-top:50px;
+    margin-bottom:40px;
+    p{
+      font-size:48px;
+      font-weight: 600;
+      padding-left: 80px;
+      padding-top: 20px;
+      text-transform: uppercase;
+      color:#fff;
+      display: inline;
+      background: url('../images/quote.png') no-repeat top left;
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 1px;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 2px solid #37e880;
+      }
+    }
+  }
+}
