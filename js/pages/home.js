@@ -1,24 +1,49 @@
 $(document).ready(function(){
-	$('#slider_1').carousel({
-		num: 3,
-		maxWidth: 665,
-		maxHeight: 460,
-		distance: 100,
-		scale: 0.6,
-		autoPlay: false,
-		animationTime: 1000,
-		showTime: 4000
-	});
-	$('#slider_2').carousel({
-		num: 3,
-		maxWidth: 665,
-		maxHeight: 460,
-		distance: 100,
-		scale: 0.6,
-		autoPlay: false,
-		animationTime: 1000,
-		showTime: 4000
-	});
+
+	var Home = {
+		setSliders: function () {
+			var sliders_sizes = {
+				maxWidth: 665,
+				maxHeight: 460
+			},distance = 100;
+
+			if($(window).width() <= 768){
+				sliders_sizes = {
+					maxWidth: 300,
+					maxHeight: 270
+				};
+				distance = 5;
+			}
+
+			$('#slider_1').carousel({
+				num: 3,
+				maxWidth: sliders_sizes['maxWidth'],
+				maxHeight: sliders_sizes['maxHeight'],
+				distance: distance,
+				scale: 0.6,
+				autoPlay: false,
+				animationTime: 1000,
+				showTime: 4000
+			});
+
+			$('#slider_2').carousel({
+				num: 3,
+				maxWidth: sliders_sizes['maxWidth'],
+				maxHeight: sliders_sizes['maxHeight'],
+				distance: distance,
+				scale: 0.6,
+				autoPlay: false,
+				animationTime: 1000,
+				showTime: 4000
+			});
+		},
+		init: function(){
+			this.setSliders();
+		}
+	};
+	Home.init();
+
+
 	var owl = $('#reviews_carousel');
 	owl.owlCarousel({
 		margin: 10,

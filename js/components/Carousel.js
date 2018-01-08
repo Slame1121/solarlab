@@ -211,17 +211,22 @@
             left: -listWidth / 2,
             top: 0//($container.height() - config.maxHeight) / 2
         });
-
+		var left = -80,
+			right = -80;
+		if($(window).width() <= 768){
+			left = -27;
+			right = -27;
+		}
         $container.find('.left').css({
             position: 'absolute',
-            left: -80,
+            left: left,
             top: '50%',
             'z-index': 9999 + $container.data('totalNum') + 1
         });
 
         $container.find('.right').css({
             position: 'absolute',
-            right: -80,
+            right: right,
             top: '50%',
             'z-index': 9999 + $container.data('totalNum') + 1
         });
@@ -257,7 +262,14 @@
         });
     }
 
+	$.fn.destroy = function(param){
+		var container = $(this);
 
+		container.find('ul').removeAttr('style');
+		container.find('li').removeAttr('style');
+		container.find('img').removeAttr('style');
+		$(this).removeAttr('style');
+	};
     $.fn.carousel = function (param) {
         var config;
         var totalNum;
@@ -312,6 +324,8 @@
             }
 
         });
+
+		return this;
 
     };
 

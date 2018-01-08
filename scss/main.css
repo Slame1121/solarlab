@@ -3123,6 +3123,7 @@ body {
     font-size: 42px;
     text-transform: uppercase; }
 .big_text_container__content p {
+  text-align: justify;
   font-size: 18px;
   letter-spacing: 1px;
   color: rgba(88, 88, 88, 0.72);
@@ -3324,7 +3325,72 @@ body {
     body #features .features-container__item {
       width: 100%;
       border-right: 0;
-      margin-bottom: 25px; } }
+      margin-bottom: 25px; }
+  body .slider_container-title {
+    margin: 15px; }
+    body .slider_container-title span {
+      font-size: 26px;
+      padding: 15px 15px;
+      font-weight: 600; }
+  body .slider_container-content__item-description p {
+    font-size: 16px; }
+  body .slider_container-content__item-description span {
+    font-size: 12px; }
+  body .slider_container-content__item-description button {
+    font-size: 12px; }
+  body .reviews_container-button_add button {
+    right: 20px; }
+  body .reviews_container-slider {
+    margin-top: 50px; }
+    body .reviews_container-slider .owl-dots {
+      padding-top: 40px; }
+    body .reviews_container-slider .owl-nav .owl-prev {
+      left: -5px;
+      top: 105px; }
+    body .reviews_container-slider .owl-nav .owl-next {
+      right: -5px;
+      top: 105px; }
+    body .reviews_container-slider__item-comment {
+      padding: 0 40px;
+      font-size: 16px; }
+  body .reviews_container-title p {
+    font-size: 26px;
+    padding-top: 30px; }
+  body .our_partners-slider .owl-carousel {
+    padding: 0; }
+  body .contact_container {
+    flex-wrap: wrap; }
+  body .footer_container {
+    padding: 15px; }
+    body .footer_container__menu a {
+      display: block;
+      width: 100%;
+      padding: 10px 0; }
+    body .footer_container__links {
+      flex-wrap: wrap; }
+      body .footer_container__links-logo {
+        flex: none; }
+      body .footer_container__links-social {
+        margin-top: 20px; }
+  body .description_container {
+    display: flex;
+    padding: 25px 10px 25px 10px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse; }
+    body .description_container-item {
+      text-align: center; }
+      body .description_container-item > span {
+        font-size: 16px; }
+      body .description_container-item p {
+        font-size: 28px; }
+      body .description_container-item:nth-child(2) {
+        padding: 0; }
+      body .description_container-item__button-link {
+        float: none;
+        margin: 0 auto; }
+  body .big_text_container__content p {
+    font-size: 12px;
+    text-align: center; } }
 #banner {
   background: url("../images/banner.jpg");
   padding: 250px 0 0 0;

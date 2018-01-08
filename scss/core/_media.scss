@@ -104,6 +104,115 @@
         margin-bottom:25px;
       }
     }
+    .slider_container{
+      &-title{
+        margin:15px;
+        span{
+          font-size:26px;
+          padding:15px 15px;
+          font-weight: 600;
+        }
+      }
+      &-content__item-description{
+        p{
+          font-size:16px;
+        }
+        span{
+          font-size:12px;
+        }
+        button{
+          font-size:12px;
+        }
+      }
+    }
 
+    .reviews_container{
+      &-button_add button{
+        right:20px;
+      }
+      &-slider{
+        margin-top:50px;
+        .owl{
+          &-dots{
+            padding-top: 40px;
+          }
+          &-nav{
+            .owl{
+              &-prev{
+                left: -5px;
+                top: 105px;
+              }
+              &-next{
+                right: -5px;
+                top: 105px;
+              }
+            }
+          }
+        }
+        &__item-comment{
+          padding: 0 40px;
+          font-size: 16px;
+        }
+      }
+      &-title p{
+        font-size:26px;
+        padding-top:30px;
+      }
+    }
+
+    .our_partners-slider .owl-carousel{
+      padding:0;
+    }
+    .contact_container{
+      flex-wrap: wrap;
+    }
+
+    .footer_container{
+      padding:15px;
+      &__menu a{
+        display: block;
+        width: 100%;
+        padding:10px 0;
+      }
+      &__links{
+        flex-wrap: wrap;
+        &-logo{
+          flex: none;
+        }
+        &-social{
+          margin-top:20px;
+        }
+      }
+    }
+
+    .description_container {
+      display: flex;
+      padding: 25px 10px 25px 10px;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+
+      &-item{
+        text-align: center;
+        >span{
+          font-size:16px;
+        }
+        p{
+          font-size: 28px;
+        }
+        &:nth-child(2){
+          padding: 0;
+        }
+
+        &__button-link{
+          float:none;
+          margin:0 auto;
+        }
+      }
+
+    }
+    .big_text_container__content p{
+      font-size:12px;
+      text-align: center;
+    }
   }
 }
