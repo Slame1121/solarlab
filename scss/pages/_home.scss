@@ -2,6 +2,10 @@
   background: url('../images/banner.jpg');
   padding: 250px 0 0 0;
   background-size: 100% 100%;
+
+  &.fixed{
+    padding-top:220px;
+  }
 }
 
 #features {
@@ -15,6 +19,11 @@
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
   padding: 15px 0;
   position: absolute;
+  &.fixed{
+    position: fixed;
+    padding:5px 0;
+    z-index:1000000;
+  }
 }
 
 #slider_top{
