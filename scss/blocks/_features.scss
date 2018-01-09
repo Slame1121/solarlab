@@ -2,9 +2,53 @@
   .features-container{
     display: flex;
       &__item{
+        position:relative;
         border-right:1px solid #fff;
         width: 33.3%;
         text-align: center;
+
+        &-active_container{
+                   position: absolute;
+                   background: url(../images/features_active_background.png);
+                   height: 404px;
+                   right: 0;
+                   top: -90px;
+                   z-index: 500;
+                   width: 100%;
+                   opacity:0;
+                   transition:all 1s;
+
+                   &-thumb{
+                    padding-top:20px;
+                   }
+                   &:hover{
+                    opacity:1;
+
+                   }
+                   >p{
+                   font-weight:600;
+                    text-align:center;
+                    padding-top:15px;
+                    font-size:20px;
+                    font-transform:uppercase;
+                   }
+                   >a{
+                       position: absolute;
+                       bottom: 0;
+                       font-size:24px;
+                       color:#fff;
+                       align-items: center;
+                       justify-content: center;
+                       text-decoration:none;
+                       display: flex;
+                       text-align: center;
+                       background: rgba(0,0,0,.5);
+                       width: 100%;
+                       left: 0;
+                       height: 50px;
+                   }
+        }
+
         &:last-child{
           border-right: 0 none;
         }

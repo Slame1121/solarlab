@@ -2,7 +2,6 @@
   padding:40px 0;
   &-slider{
     .owl-carousel{
-      padding:0 80px;
       .item{
         padding:0 40px;
       }
@@ -13,11 +12,11 @@
       }
       .owl{
         &-prev{
-          left:0;
+          left:-20px;
           top:5px;
         }
         &-next{
-          right:0;
+          right:-20px;
           top:5px;
         }
       }

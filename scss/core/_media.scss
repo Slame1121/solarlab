@@ -162,6 +162,15 @@
 
     .our_partners-slider .owl-carousel{
       padding:0;
+
+      .owl-nav .owl{
+          &-next{
+            right: -5px;
+          }
+          &-prev{
+            left:-5px;
+          }
+      }
     }
     .contact_container{
       flex-wrap: wrap;
@@ -213,6 +222,10 @@
     .big_text_container__content p{
       font-size:12px;
       text-align: center;
+    }
+
+    .fixed .headblock-item_nav-contact{
+      display: block;
     }
   }
 }
