@@ -10,6 +10,10 @@ body{
     margin:0 auto;
   }
   #custom_header{
-    background:url('../images/custom_header.jpg') center center;
+    background:url('../images/custom_background.jpg') center center;
+    min-height:500px;
+    h1{
+      text-transform: uppercase;
+    }
   }
 }

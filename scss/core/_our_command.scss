@@ -1,0 +1,50 @@
+.our_command_container{
+  &-title{
+    margin-bottom:50px;
+    p{
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  &-slider{
+    text-align: center;
+
+    .owl{
+      &-nav{
+        position: absolute;
+        top:0;
+        width: 100%;
+        .owl{
+          &-prev, &-next{
+            position: absolute;
+          }
+          &-prev{
+            left:0;
+            top:45px;
+          }
+          &-next{
+            right:0;
+            top:45px;
+          }
+        }
+      }
+    }
+    &__item{
+      &-name{
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      &-spec{
+
+      }
+      &-thumb{
+        margin-bottom:25px;
+        width:220px;
+        height:220px;
+        img{
+          width:100%;
+        }
+      }
+    }
+  }
+}

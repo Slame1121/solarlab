@@ -2802,6 +2802,11 @@ body {
   body .container {
     width: 1170px;
     margin: 0 auto; }
+  body #custom_header {
+    background: url("../images/custom_background.jpg") center center;
+    min-height: 500px; }
+    body #custom_header h1 {
+      text-transform: uppercase; }
 
 .headblock {
   display: flex;
@@ -3376,6 +3381,52 @@ body {
         border-bottom: 2px solid  #fdcd56;
         color: #fdcd56; }
 
+.custom_header_container {
+  min-height: 500px;
+  display: flex;
+  color: #fff;
+  flex-direction: column-reverse; }
+  .custom_header_container-breadcrumbs, .custom_header_container-title {
+    width: 100%; }
+  .custom_header_container-breadcrumbs {
+    margin-bottom: 80px; }
+    .custom_header_container-breadcrumbs ul {
+      list-style-type: none; }
+      .custom_header_container-breadcrumbs ul li {
+        display: inline-block; }
+        .custom_header_container-breadcrumbs ul li a {
+          color: #fff;
+          text-decoration: none; }
+        .custom_header_container-breadcrumbs ul li:after {
+          content: "/";
+          float: right;
+          margin: 0 10px; }
+        .custom_header_container-breadcrumbs ul li:last-child:after {
+          content: ""; }
+  .custom_header_container-title {
+    margin-bottom: 50px; }
+    .custom_header_container-title h1 {
+      font-size: 40px;
+      position: relative;
+      display: inline;
+      font-weight: 800;
+      cursor: default;
+      transition: all 1.5s;
+      color: #fff; }
+      .custom_header_container-title h1:hover {
+        color: #fdcd56; }
+        .custom_header_container-title h1:hover:after {
+          width: 100%;
+          border-color: #fdcd56; }
+      .custom_header_container-title h1:after {
+        transition: all 1.5s;
+        content: "";
+        border-bottom: 4px solid #fff;
+        width: 35%;
+        position: absolute;
+        left: 0;
+        bottom: -20px; }
+
 @media (max-width: 1200px) {
   body {
     font-size: 16px; }
@@ -3493,6 +3544,68 @@ body {
     text-align: center; }
   body .fixed .headblock-item_nav-contact {
     display: block; } }
+.our_command_container-title {
+  margin-bottom: 50px; }
+  .our_command_container-title p {
+    font-size: 40px;
+    text-align: center; }
+.our_command_container-slider {
+  text-align: center; }
+  .our_command_container-slider .owl-nav {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    .our_command_container-slider .owl-nav .owl-prev, .our_command_container-slider .owl-nav .owl-next {
+      position: absolute; }
+    .our_command_container-slider .owl-nav .owl-prev {
+      left: 0;
+      top: 45px; }
+    .our_command_container-slider .owl-nav .owl-next {
+      right: 0;
+      top: 45px; }
+  .our_command_container-slider__item-name {
+    text-transform: uppercase;
+    font-weight: 800; }
+  .our_command_container-slider__item-thumb {
+    margin-bottom: 25px;
+    width: 220px;
+    height: 220px; }
+    .our_command_container-slider__item-thumb img {
+      width: 100%; }
+
+.not_expensive_container {
+  background: url("../images/why.png") no-repeat;
+  background-position: center 100px;
+  padding-bottom: 60px; }
+  .not_expensive_container-title {
+    margin-bottom: 80px; }
+    .not_expensive_container-title p {
+      text-align: center;
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: 800; }
+  .not_expensive_container-content {
+    display: flex;
+    justify-content: space-between; }
+    .not_expensive_container-content-item {
+      max-width: 30%; }
+      .not_expensive_container-content-item__row {
+        min-height: 240px;
+        display: flex;
+        margin-bottom: 15px; }
+        .not_expensive_container-content-item__row-thumb {
+          min-width: 140px; }
+        .not_expensive_container-content-item__row-description {
+          padding-left: 15px; }
+          .not_expensive_container-content-item__row-description p {
+            font-size: 14px; }
+          .not_expensive_container-content-item__row-description span {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-bottom: 15px;
+            display: inline-block; }
+
 #banner {
   background: url("../images/banner.jpg");
   padding: 250px 0 0 0;
@@ -3551,5 +3664,12 @@ body {
 
 #footer {
   background: #040f16; }
+
+#map {
+  margin-bottom: -5px; }
+
+#not_expensive {
+  padding-top: 30px;
+  background: #f8f8f8; }
 
 /*# sourceMappingURL=main.css.map */
