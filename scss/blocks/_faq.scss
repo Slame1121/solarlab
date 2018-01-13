@@ -1,0 +1,91 @@
+.faq_container{
+  &-title{
+    margin-bottom:30px;
+    p{
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  &-content{
+
+    &__item{
+      display: flex;
+      justify-content: space-between;
+      &-category{
+        max-width: 500px;
+        &__questions{
+          &-item{
+            padding-bottom:15px;
+            margin-bottom:20px;
+            border-bottom:1px solid #e8e8e8;
+
+            &.opened{
+              .faq_container-content__item-category__questions-item__title{
+                &:after{
+                  content:"\f078";
+                }
+              }
+            }
+            &__title{
+              padding-right:20px;
+              position: relative;
+              cursor: pointer;
+
+              &:after{
+                transition: all 1s;
+                content:"\f054";
+                position: absolute;
+                top:50%;
+                right:0;
+                transform: translateY(-50%);
+              }
+              p{
+                font-size: 18px;
+                font-weight: 400;
+                font-family: $font-relaway;
+              }
+            }
+            &__content{
+              display: none;
+              p{
+                padding:15px 0;
+                font-size:16px;
+                color:#5e5e5e;
+              }
+            }
+          }
+        }
+        &__title{
+          background: #333333;
+          position: relative;
+          margin-bottom: 20px;
+          p{
+            color:#fff;
+            text-transform: uppercase;
+            font-size: 24px;
+            text-align: center;
+          }
+
+          &:after{
+            content:'';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: solid 5px #333333;
+            border-left: solid 5px transparent;
+            border-right: solid 5px transparent;
+          }
+        }
+      }
+
+
+    }
+  }
+}

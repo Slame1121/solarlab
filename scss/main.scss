@@ -17,11 +17,19 @@
 @import "blocks/contacts";
 @import "blocks/footer";
 @import "blocks/custom_header";
-@import "core/media";
-@import "core/our_command";
-@import "core/not_expensive";
+@import "blocks/our_command";
+@import "blocks/not_expensive";
+@import "blocks/choose_station";
+@import "blocks/calculator_link";
+@import "blocks/help_section";
+@import "blocks/faq";
+
+
+
 
 @import "pages/home";
 @import "pages/conctacts";
 @import "pages/why_it_the_best";
 
+
+@import "core/media";
